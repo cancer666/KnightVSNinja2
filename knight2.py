@@ -78,9 +78,6 @@ class Player(pygame.sprite.Sprite):
             # Stop our vertical movement
             self.change_y = 0
 
-            if isinstance(block, MovingPlatform):
-                self.rect.x += block.change_x
-
     def calc_grav(self):
         """ Calculate effect of gravity. """
         if self.change_y == 0:
